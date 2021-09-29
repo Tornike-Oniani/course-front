@@ -1,0 +1,38 @@
+.search {
+  flex: 0 0 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__input {
+    font-family: inherit;
+    font-size: 1.8rem;
+    color: $color-gray-dark;
+    background-color: $color-white;
+    border: none;
+    width: 100%;
+    padding: 1rem 1.5rem;
+    border-radius: 10rem;
+    margin-right: -3.5rem;
+
+    &:focus {
+      outline: none;
+    }
+
+    &::-webkit-input-placeholder {
+      color: currentColor;
+    }
+  }
+
+  &__btn {
+    border: none;
+    background-color: $color-white;
+    cursor: pointer;
+  }
+
+  &__icon {
+    height: 2rem;
+    width: 2rem;
+    fill: $color-gray-dark;
+  }
+}

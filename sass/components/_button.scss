@@ -1,0 +1,39 @@
+.btn {
+  &:link,
+  &:visited {
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: $color-white;
+    background-color: $color-primary;
+    display: inline-block;
+    padding: 1.3rem 3.5rem;
+    border-radius: 5rem;
+    display: inline-flex;
+    align-items: center;
+  }
+}
+
+.btn-white {
+  &:link,
+  &:visited {
+    text-decoration: none;
+    font-size: 2.4rem;
+    font-weight: 600;
+    color: $color-text;
+    display: inline-block;
+    background-color: $color-white;
+    padding: 1.5rem 2rem;
+    padding-right: 2.4rem;
+    border-radius: 10rem;
+    display: inline-flex;
+    align-items: center;
+  }
+
+  &__icon {
+    display: flex;
+    height: 2.4rem;
+    width: 2.9rem;
+    margin-right: 0.5rem;
+  }
+}

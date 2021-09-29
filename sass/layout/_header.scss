@@ -1,0 +1,52 @@
+.header {
+  grid-column: full-start / full-end;
+  background-color: $color-secondary;
+
+  @include content-grid;
+
+  &__content {
+    @include span-content-grid;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__branding {
+    font-size: 3.6rem;
+    font-weight: 600;
+    color: $color-text;
+  }
+
+  &__navigation {
+  }
+
+  &__item:link,
+  &__item:visited {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: $color-text;
+
+    &:not(:last-child) {
+      margin-right: 1.5rem;
+    }
+  }
+
+  &__item--login:link,
+  &__item--login:visited {
+    padding: 1rem 1.5rem;
+    background-color: $color-primary-light;
+    color: $color-white;
+    border-radius: 0.7rem;
+  }
+
+  &__item--sign-up:link,
+  &__item--sign-up:visited {
+    padding: 1rem 1.5rem;
+    background-color: $color-accent;
+    color: $color-white;
+    border-radius: 0.7rem;
+  }
+}
