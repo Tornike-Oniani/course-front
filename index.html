@@ -1,170 +1,209 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" type="text/css" href="/css/main.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap"
+    rel="stylesheet" />
 
-    <title>Coursey</title>
-  </head>
-  <body>
-    <div class="container">
-      <header class="header">
-        <div class="header__content">          
-          <h2 class="header__branding">"Brand name"</h2>
-  
-          <form action="#" class="search">
-            <input type="text" class="search__input" placeholder="Search...">
-  
-            <button class="search__btn">
-              <svg class="search__icon">
-                <use xlink:href="/img/sprite.svg#icon-magnifying-glass" />
-              </svg>
-            </button>
-          </form>
-  
-          <nav class="header__navigation">
-            <a href="#" class="header__item">Home</a>
-            <a href="#" class="header__item">Courses</a>
-            <a href="#" class="header__item header__item--login">Login</a>
-            <a href="#" class="header__item header__item--sign-up">Sign up</a>
-          </nav>
+  <link rel="stylesheet" type="text/css" href="/css/main.min.css" />
+
+  <title>Coursey</title>
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="header__content">
+        <h2 class="header__branding">"Brand name"</h2>
+
+        <form action="#" class="search">
+          <input type="text" class="search__input" placeholder="Search...">
+
+          <button class="search__btn">
+            <svg class="search__icon">
+              <use xlink:href="/img/sprite.svg#icon-magnifying-glass" />
+            </svg>
+          </button>
+        </form>
+
+        <nav class="header__navigation">
+          <a href="index.html" class="header__item">Home</a>
+          <a href="#" class="header__item">Courses</a>
+          <a href="login.html" class="header__item header__item--login">Login</a>
+          <a href="#" class="header__item header__item--sign-up">Sign up</a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="section-hero">
+      <div class="section-hero__content">
+        <h1 class="heading-primary">
+          <span class="heading-primary heading-primary--main">Welcome</span>
+          <span class="heading-primary heading-primary--sub">Learn design and illustration</span>
+        </h1>
+
+        <a href="#" class="btn-white btn--animated">
+          <svg class="btn-white__icon">
+            <use xlink:href="/img/sprite.svg#icon-arrow-down" />
+          </svg>
+          View courses
+        </a>
+      </div>
+    </section>
+
+    <section class="section-features">
+      <div class="section-features__content">
+        <h2 class="heading-secondary section-features__heading">What we offer</h2>
+
+        <!-- Real world skills -->
+        <div class="feature-box">
+          <svg class="feature-box__icon">
+            <use xlink:href="/img/sprite.svg#icon-globe" />
+          </svg>
+          <h3 class="feature-box__title">Real world skills</h3>
+          <p class="feature-box__description">
+            Get real world skills that you can use either for professional or personal gain.
+          </p>
         </div>
-      </header>
-
-      <section class="section-hero">
-        <div class="section-hero__content">
-          <h1 class="heading-primary">
-            <span class="heading-primary heading-primary--main">Welcome</span>
-            <span class="heading-primary heading-primary--sub">Learn design and illustration</span>
-          </h1>
-  
-          <a href="#" class="btn-white">
-            <svg class="btn-white__icon">
-              <use xlink:href="/img/sprite.svg#icon-arrow-down" />
-            </svg>
-            View courses
-          </a>
+        <!-- Online access -->
+        <div class="feature-box">
+          <svg class="feature-box__icon">
+            <use xlink:href="/img/sprite.svg#icon-cloud" />
+          </svg>
+          <h3 class="feature-box__title">Online access</h3>
+          <p class="feature-box__description">
+            Access our courses from anywhere with any device.
+          </p>
         </div>
-      </section>
-
-      <section class="section-features">
-        <div class="section-features__content">
-          <h2 class="heading-secondary section-features__heading">What we offer</h2>
-  
-          <!-- Real world skills -->
-          <div class="feature-box">
-            <svg class="feature-box__icon">
-              <use xlink:href="/img/sprite.svg#icon-globe" />
-            </svg>
-            <h3 class="feature-box__title">Real world skills</h3>
-            <p class="feature-box__description">
-              Get real world skills that you can use either for professional or personal gain.
-            </p>
-          </div>
-          <!-- Online access -->
-          <div class="feature-box">
-            <svg class="feature-box__icon">
-              <use xlink:href="/img/sprite.svg#icon-cloud" />
-            </svg>
-            <h3 class="feature-box__title">Online access</h3>
-            <p class="feature-box__description">
-              Access our courses from anywhere with any device.
-            </p>
-          </div>
-          <!-- Projects -->
-          <div class="feature-box">
-            <svg class="feature-box__icon">
-              <use xlink:href="/img/sprite.svg#icon-globe" />
-            </svg>
-            <h3 class="feature-box__title">Projects</h3>
-            <p class="feature-box__description">
-              Acquire a portfolio of amazing projects to show people.
-            </p>
-          </div>
-          <!-- Real world skills -->
-          <div class="feature-box">
-            <svg class="feature-box__icon">
-              <use xlink:href="/img/sprite.svg#icon-emoji-flirt" />
-            </svg>
-            <h3 class="feature-box__title">Interactive</h3>
-            <p class="feature-box__description">
-              Gain access to Q&A section where you can post any questions you might have.
-            </p>
-          </div>
+        <!-- Projects -->
+        <div class="feature-box">
+          <svg class="feature-box__icon">
+            <use xlink:href="/img/sprite.svg#icon-book" />
+          </svg>
+          <h3 class="feature-box__title">Projects</h3>
+          <p class="feature-box__description">
+            Acquire a portfolio of amazing projects to show people.
+          </p>
         </div>
-      </section>
-
-      <main class="featured-courses">
-        <h2 class="heading-secondary u-margin-bottom-big">Featured courses</h2>
-
-        <!-- Photoshop course -->
-        <div class="course">
-          <figure class="course__image">
-            <figcaption class="course__caption">Ps</figcaption>
-          </figure>
-
-          <h3 class="course__title">Photoshop Fundamentals Course</h3>
-          <p class="course__description">This is a beginner course of Photoshop. Learn the fundamentals of how to manipulate images from scratch</p>
-          <div class="course__rating">
-            <svg class="course__star">
-              <use xlink:href="/img/sprite.svg#icon-star" />
-            </svg>
-            <svg class="course__star">
-              <use xlink:href="/img/sprite.svg#icon-star" />
-            </svg>
-            <svg class="course__star">
-              <use xlink:href="/img/sprite.svg#icon-star" />
-            </svg>
-            <svg class="course__star">
-              <use xlink:href="/img/sprite.svg#icon-star" />
-            </svg>
-            <svg class="course__star">
-              <use xlink:href="/img/sprite.svg#icon-star" />
-            </svg>
-            <span class="course__reviews">(15)</span>
-          </div>
-          <a href="#" class="btn">View full course</a>
+        <!-- Real world skills -->
+        <div class="feature-box">
+          <svg class="feature-box__icon">
+            <use xlink:href="/img/sprite.svg#icon-emoji-flirt" />
+          </svg>
+          <h3 class="feature-box__title">Interactive</h3>
+          <p class="feature-box__description">
+            Gain access to Q&A section where you can post any questions you might have.
+          </p>
         </div>
-        <!-- Illustrator course -->
-        <div class="course">
-          <figure class="course__image course__image--secondary">
-            <figcaption class="course__caption course__caption--secondary">Ai</figcaption>
-          </figure>
+      </div>
+    </section>
 
-          <h3 class="course__title">Illustrator Fundamentals Course</h3>
-          <p class="course__description">A beginner Illustrator course for learning fundamentals and creating basic projects portfolio from scratch.</p>
-          <div class="course__rating">
-            <svg class="course__star">
-              <use xlink:href="/img/sprite.svg#icon-star" />
-            </svg>
-            <svg class="course__star">
-              <use xlink:href="/img/sprite.svg#icon-star" />
-            </svg>
-            <svg class="course__star">
-              <use xlink:href="/img/sprite.svg#icon-star" />
-            </svg>
-            <svg class="course__star">
-              <use xlink:href="/img/sprite.svg#icon-star" />
-            </svg>
-            <svg class="course__star course__star--gray">
-              <use xlink:href="/img/sprite.svg#icon-star" />
-            </svg>
-            <span class="course__reviews">(37)</span>
-          </div>
-          <a href="#" class="btn">View full course</a>
+    <main class="featured-courses">
+      <h2 class="heading-secondary u-margin-bottom-big">Featured courses</h2>
+
+      <!-- Photoshop course -->
+      <div class="course">
+        <figure class="course__image">
+          <figcaption class="course__caption">Ps</figcaption>
+        </figure>
+
+        <h3 class="course__title">Photoshop Fundamentals Course</h3>
+        <p class="course__description">This is a beginner course of Photoshop. Learn the fundamentals of how to
+          manipulate images from scratch</p>
+        <div class="course__rating">
+          <svg class="course__star">
+            <use xlink:href="/img/sprite.svg#icon-star" />
+          </svg>
+          <svg class="course__star">
+            <use xlink:href="/img/sprite.svg#icon-star" />
+          </svg>
+          <svg class="course__star">
+            <use xlink:href="/img/sprite.svg#icon-star" />
+          </svg>
+          <svg class="course__star">
+            <use xlink:href="/img/sprite.svg#icon-star" />
+          </svg>
+          <svg class="course__star">
+            <use xlink:href="/img/sprite.svg#icon-star" />
+          </svg>
+          <span class="course__reviews">(15)</span>
+        </div>
+        <a href="#" class="btn">View full course</a>
+      </div>
+      <!-- Illustrator course -->
+      <div class="course">
+        <figure class="course__image course__image--secondary">
+          <figcaption class="course__caption course__caption--secondary">Ai</figcaption>
+        </figure>
+
+        <h3 class="course__title">Illustrator Fundamentals Course</h3>
+        <p class="course__description">A beginner Illustrator course for learning fundamentals and creating basic
+          projects portfolio from scratch.</p>
+        <div class="course__rating">
+          <svg class="course__star">
+            <use xlink:href="/img/sprite.svg#icon-star" />
+          </svg>
+          <svg class="course__star">
+            <use xlink:href="/img/sprite.svg#icon-star" />
+          </svg>
+          <svg class="course__star">
+            <use xlink:href="/img/sprite.svg#icon-star" />
+          </svg>
+          <svg class="course__star">
+            <use xlink:href="/img/sprite.svg#icon-star" />
+          </svg>
+          <svg class="course__star course__star--gray">
+            <use xlink:href="/img/sprite.svg#icon-star" />
+          </svg>
+          <span class="course__reviews">(37)</span>
+        </div>
+        <a href="#" class="btn">View full course</a>
+      </div>
+
+      <a href="#" class="btn u-right-text">Browse all our courses</a>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__content">
+        <div class="footer__contact">
+          <div class="footer__branding">"Brand name"</div>
+          <ul class="footer__socials">
+            <li class="footer__social-item">
+              <a href="#" class="footer__social">
+                <svg class="footer__social-icon">
+                  <use xlink:href="/img/sprite.svg#icon-facebook" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+
+          <ul class="footer__nav">
+            <li class="footer__nav-item">
+              <a href="#" class="footer__nav-link">Contact us</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="#" class="footer__nav-link">FAQ</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="#" class="footer__nav-link">ALL COURSES</a>
+            </li>
+          </ul>
         </div>
 
-        <a href="#" class="btn u-right-text">Browse all our courses</a>
-      </main>
+        <div class="footer__info">
+          <div class="footer__terms">
+            <a href="#" class="footer__term">Terms of use</a>
+            <a href="#" class="footer__term">Privacy policy</a>
+          </div>
+          <span class="footer__copy">&copy; Brand Name 2021</span>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
 
-      <footer class="footer">
-        Footer
-      </footer>
-    </div>
-  </body>
 </html>

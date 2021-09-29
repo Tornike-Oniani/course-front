@@ -1,16 +1,55 @@
 .btn {
+  &,
   &:link,
   &:visited {
     text-decoration: none;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-weight: 600;
-    color: $color-white;
     background-color: $color-primary;
+    color: $color-white;
     display: inline-block;
     padding: 1.3rem 3.5rem;
     border-radius: 5rem;
     display: inline-flex;
     align-items: center;
+    transition: all .2s;
+
+    // Change for the <button> element
+    border: none;
+    cursor: pointer;
+    position: relative;
+  }
+
+  &::after {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 5rem;
+    background-color: $color-primary;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.4s;
+  }
+  
+  &:hover {
+    transform: translateY(-3px);
+    /* x offset, y offset, blur, color */
+    box-shadow: $shadow;
+
+    &::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
+    }
+  }
+
+  &:active,
+  &:focus {
+    outline: none;
+    transform: translateY(-1px);
+    box-shadow: $shadow-light;
   }
 }
 
@@ -18,7 +57,7 @@
   &:link,
   &:visited {
     text-decoration: none;
-    font-size: 2.4rem;
+    font-size: 2rem;
     font-weight: 600;
     color: $color-text;
     display: inline-block;
@@ -28,12 +67,45 @@
     border-radius: 10rem;
     display: inline-flex;
     align-items: center;
+    transition: all .2s;
   }
 
   &__icon {
     display: flex;
-    height: 2.4rem;
-    width: 2.9rem;
+    height: 3.4rem;
+    width: 3.9rem;
     margin-right: 0.5rem;
+  }
+
+    &::after {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 5rem;
+    background-color: $color-white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.4s;
+  }
+  
+  &:hover {
+    transform: translateY(-3px);
+    /* x offset, y offset, blur, color */
+    box-shadow: $shadow;
+
+    &::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
+    }
+  }
+
+  &:active,
+  &:focus {
+    outline: none;
+    transform: translateY(-1px);
+    box-shadow: $shadow-light;
   }
 }

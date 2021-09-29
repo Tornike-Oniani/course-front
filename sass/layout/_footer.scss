@@ -1,2 +1,89 @@
 .footer {
+  grid-column: full-start / full-end;
+  @include content-grid;
+
+  background-color: $color-text;
+  color: $color-white;
+
+  &__content {
+    @include span-content-grid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5rem 0;
+  }
+
+  &__contact {
+    
+  }
+
+  &__branding {
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
+
+  &__socials {
+    list-style: none;
+    margin: 2rem 0;
+  }
+
+  &__social-item {
+    
+  }
+  
+  &__social {
+  }
+  
+  &__social-icon {
+    height: 3rem;
+    width: 3rem;
+    fill: $color-white;
+  }
+
+  &__nav {
+    list-style: none;
+    display: grid;
+    row-gap: .7rem;
+  }
+
+  &__nav-item {
+
+  }
+
+  &__nav-link {
+    &:link,
+    &:visited {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: $color-white;
+      text-decoration: none;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+  }
+
+  &__info {
+    align-self: flex-end;
+    color: rgba($color-white, .66);
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+  &__terms {
+  }
+
+  &__term {
+    &:link,
+    &:visited {
+
+      color: inherit;
+      text-decoration: underline;
+      &:not(:last-child) {
+        margin-right: 1rem;
+      }
+    }
+  }
+
+  &__copy {
+  }
 }

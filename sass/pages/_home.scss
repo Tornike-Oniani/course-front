@@ -2,11 +2,11 @@
   display: grid;
   grid-template-rows:
     11rem
-    80vh
+    86vh
     repeat(3, min-content);
   grid-template-columns:
     [full-start] minmax(6rem, 1fr)
-    [center-start] repeat(8, [col-start] minmax(min-content, 17rem) [col-end])
+    [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end])
     [center-end] minmax(6rem, 1fr)
     [full-end];
 }
@@ -36,7 +36,7 @@
     justify-items: start;
     align-content: center;
     // We don't want content to be exactly in center
-    margin-bottom: 15rem;
+    margin-bottom: 13rem;
   }
 }
 

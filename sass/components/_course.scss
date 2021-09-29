@@ -4,6 +4,7 @@
   grid-template-rows: repeat(4, auto);
   grid-template-columns: repeat(2, auto);
   column-gap: 10rem;
+  row-gap: 1.5rem;
   justify-items: start;
   align-items: start;
   padding-bottom: 7rem;
@@ -16,8 +17,8 @@
   &__image {
     grid-row: 1 / -1;
 
-    width: 31rem;
-    height: 30rem;
+    width: 23rem;
+    height: 22rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -49,7 +50,7 @@
   }
 
   &__caption {
-    font-size: 18rem;
+    font-size: 13.5rem;
     font-weight: 700;
     color: #31a8ff;
 
@@ -59,13 +60,13 @@
   }
 
   &__title {
-    font-size: 3.6rem;
+    font-size: 3rem;
     font-weight: 600;
     color: $color-text;
   }
 
   &__description {
-    font-size: 2.4rem;
+    font-size: 2rem;
     font-weight: 400;
     color: $color-text-light;
   }
@@ -76,8 +77,8 @@
   }
 
   &__star {
-    height: 3.7rem;
-    width: 3.7rem;
+    height: 3rem;
+    width: 3rem;
     fill: #e59819;
 
     &--gray {
@@ -86,7 +87,7 @@
   }
 
   &__reviews {
-    font-size: 2.4rem;
+    font-size: 2rem;
     font-weight: 400;
     color: $color-gray-dark;
     margin-left: 0.5rem;

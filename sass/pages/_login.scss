@@ -1,0 +1,39 @@
+.container-login {
+    display: grid;
+  grid-template-rows:
+    11rem
+    repeat(2, min-content);
+  grid-template-columns:
+    [full-start] minmax(6rem, 1fr)
+    [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end])
+    [center-end] minmax(6rem, 1fr)
+    [full-end];
+}
+
+.section-login {
+  grid-column: full-start / full-end;
+  padding: 10rem 0;
+  @include content-grid;
+
+  background-color: $color-gray-light;
+
+  &__content {
+    @include span-content-grid;
+    justify-self: center;
+  
+    width: 70%;
+    padding: 3rem 10rem;
+    background-color: $color-white;
+    border-radius: 2.5rem;
+    box-shadow: $shadow;
+  }
+
+  &__forgot {
+    font-size: 2rem;
+    font-weight: 400;
+    color: $color-text-light;
+    text-align: center;
+    margin-top: 5rem;
+    cursor: pointer;
+  }
+}
